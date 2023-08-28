@@ -80,7 +80,7 @@ Note: Replace '/User/levi/go/bin/gf' with the path where gf binary is located in
 $ alias gf='/User/levi/go/bin/gf'
 $ cd ~/.gf/
 
-Note: Paste JSON files(https://github.com/devanshbatham/ParamSpider/tree/master/gf_profiles) in ~/.gf/ folder
+Note: Paste JSON files(https://github.com/0xKayala/ParamSpider/tree/master/gf_profiles) in ~/.gf/ folder
 
 Now run ParamSpider and navigate to the output directory
 
@@ -92,28 +92,25 @@ $ gf wordpress domain.txt //for wordpress urls
 [More GF profiles to be added in future]
 ```
 
-  
 
 ## Example :
 
 ```
 $ python3 paramspider.py --domain bugcrowd.com --exclude woff,css,js,png,svg,php,jpg --output bugcrowd.txt
 ```
-
   
 
-![](https://raw.githubusercontent.com/devanshbatham/ParamSpider/master/static/example.PNG)
+![](https://raw.githubusercontent.com/0xKayala/ParamSpider/master/static/example.PNG)
 
   
-
 ### Note :
 
 ```
-As it fetches the parameters from web archive data ,
+As it fetches the parameters from web archive data,
 so chances of false positives are high.
 ```
 
-## Contributing to ParamSpider :
+## Contributing to ParamSpider:
 
  - Report bugs, missing best practices 
  - Shoot my [DM](https://twitter.com/0xAsm0d3us) with new ideas 
