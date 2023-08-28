@@ -54,7 +54,7 @@ def connector(url):
     except requests.exceptions.RequestException as e:
             retry = True
             print("\u001b[31;1m {e} Can not get target information\u001b[0m")
-            print("\u001b[31;1mIf you think this is a bug or unintentional behaviour. Report here : https://github.com/devanshbatham/ParamSpider/issues\u001b[0m")
+            print("\u001b[31;1mIf you think this is a bug or unintentional behaviour. Report here : https://github.com/0xKayala/ParamSpider/issues\u001b[0m")
     except KeyboardInterrupt as k:
             retry = False
             print("\u001b[31;1mInterrupted by user\u001b[0m")
