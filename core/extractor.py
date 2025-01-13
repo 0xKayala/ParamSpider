@@ -1,8 +1,7 @@
-import re
 import warnings
-
-# Suppress SyntaxWarnings for invalid escape sequences
 warnings.filterwarnings("ignore", category=SyntaxWarning)
+
+import re
 
 def param_extract(response, level, black_list, placeholder):
     ''' 
