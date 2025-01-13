@@ -6,8 +6,8 @@ def param_extract(response, level, black_list, placeholder):
     regexp : r'.*?:\/\/.*\?.*=[^$]'
     '''
     
-    # Updated the regex to avoid invalid escape sequences and ensure it functions correctly
-    parsed = list(set(re.findall(r'.*?:\/\/.*\?.*=[^$]', response)))  # No escaping needed for '/'
+    # No escaping needed for '/'
+    parsed = list(set(re.findall(r'.*?:\/\/.*\?.*=[^$]', response)))  
     final_uris = []
     
     for i in parsed:
