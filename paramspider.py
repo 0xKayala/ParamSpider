@@ -13,18 +13,19 @@ start_time = time.time()
 
 
 def main():
-    if os.name == 'nt':
-        os.system('cls')
-    banner = """\u001b[36m
+    # Delay to ensure NucleiFuzzer banner appears first
+    time.sleep(2)  # Wait for NucleiFuzzer banner to complete output
 
-         ___                               _    __       
-        / _ \___ ________ ___ _  ___ ___  (_)__/ /__ ____
-       / ___/ _ `/ __/ _ `/  ' \(_-</ _ \/ / _  / -_) __/
-      /_/   \_,_/_/  \_,_/_/_/_/___/ .__/_/\_,_/\__/_/   
-                                  /_/     \u001b[0m               
-                            
-                           \u001b[32m - coded with <3 by Devansh Batham\u001b[0m 
-    """
+    # Display the ParamSpider banner
+    banner = (
+        "\u001b[36m\n\n"
+        "         ___                               _    __       \n"
+        "        / _ \\___ ________ ___ _  ___ ___  (_)__/ /__ ____\n"
+        "       / ___/ _ `/ __/ _ `/  ' \\(_-</ _ \\/ / _  / -_) __/\n"
+        "      /_/   \\_,_/_/  \\_,_/_/_/_/___/ .__/_/\\_,_/\\__/_/   \n"
+        "                                  /_/     \u001b[0m\n\n"
+        "                           \u001b[32m - coded with <3 by Devansh Batham\u001b[0m\n"
+    )
     print(banner)
 
     parser = argparse.ArgumentParser(description='ParamSpider a parameter discovery suite')
