@@ -17,15 +17,18 @@ def main():
     time.sleep(2)  # Wait for NucleiFuzzer banner to complete output
 
     # Display the ParamSpider banner
-    banner = (
-        "\u001b[36m\n\n"
-        "         ___                               _    __       \n"
-        "        / _ \\___ ________ ___ _  ___ ___  (_)__/ /__ ____\n"
-        "       / ___/ _ `/ __/ _ `/  ' \\(_-</ _ \\/ / _  / -_) __/\n"
-        "      /_/   \\_,_/_/  \\_,_/_/_/_/___/ .__/_/\\_,_/\\__/_/   \n"
-        "                                  /_/     \u001b[0m\n\n"
-        "                           \u001b[32m - coded with <3 by Devansh Batham\u001b[0m\n"
-    )
+    banner = r"""\u001b[36m
+
+   
+            ___                               _    __       
+           / _ \___ ________ ___ _  ___ ___  (_)__/ /__ ____
+          / ___/ _ `/ __/ _ `/  ' \(_-</ _ \/ / _  / -_) __/
+         /_/   \_,_/_/  \_,_/_/_/_/___/ .__/_/\_,_/\__/_/   
+                                     /_/                    
+                               
+                               - coded with <3 by Devansh Batham 
+       \u001b[0m
+    """
     print(banner)
 
     parser = argparse.ArgumentParser(description='ParamSpider a parameter discovery suite')
